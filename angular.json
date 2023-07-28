@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "1b97c230-13b1-45e4-bc2b-c0d41ddabb98"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -29,10 +32,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/p5/lib/p5.js"
+            ]
           },
           "configurations": {
             "production": {
+              "aot": true,
               "budgets": [
                 {
                   "type": "initial",
