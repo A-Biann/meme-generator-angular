@@ -8,12 +8,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { UploadImageComponent } from './upload-image/upload-image.component';
 import {MatButtonModule} from "@angular/material/button";
 import { FormsModule } from '@angular/forms';
-import {GenerateMemeModule} from "./generate-meme/generate-meme.module";
+import { ReactiveFormsModule } from "@angular/forms";
+// import {GenerateMemeModule} from "./generate-meme/generate-meme.module";
+import {GenerateMemeComponent} from "./generate-meme/generate-meme.component";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
     AppComponent,
     UploadImageComponent,
+    GenerateMemeComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,8 @@ import {GenerateMemeModule} from "./generate-meme/generate-meme.module";
     MatIconModule,
     MatButtonModule,
     FormsModule,
-    GenerateMemeModule
+    MatInputModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
